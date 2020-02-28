@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
+    android:background="@android:color/holo_blue_light"
     >
 
     <EditText
@@ -13,17 +13,19 @@
         android:inputType="textPersonName"
         android:hint="Name"
         android:textColor="@color/text"
-        />
+        android:layout_margin="20dp"/>
 
     <Button
         android:id="@+id/button_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SEARCH" />
+        android:text="SEARCH"
+        android:layout_margin="20dp"/>
 
     <ListView
         android:id="@+id/one_data"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"/>
 
 </LinearLayout>

@@ -11,4 +11,5 @@
     <color name="tv_background">#169FD2</color>
     <color name="vp_background">#169FD2</color>
     <color name="blue_button">#3AAEFF</color>
+    <color name="dark_blue">#536DFE</color>
 </resources>

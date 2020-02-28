@@ -1,4 +1,4 @@
-package com.example.facebook.database;
+package com.example.newfakebook.database;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -32,6 +32,7 @@ public class MyDtabase extends SQLiteOpenHelper {
 
     // SQL quaries
     public static final String DROP_TABLE = "DROP TABLE IF EXISTS "+STUDENT_TABLE;
+    public static final String SELECT_STUDENTS = "SELECT * FROM "+STUDENT_TABLE;
 
     public MyDtabase(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -77,4 +78,10 @@ public class MyDtabase extends SQLiteOpenHelper {
         return db2;
     }
 
+    public Cursor getAllStudents() {
+        SQLiteDatabase db = getWritableDatabase();
+        //SQL Result taken to cursor
+        Cursor cursor = db.rawQuery(SELECT_STUDENTS, null);
+        return cursor;
+    }
 }

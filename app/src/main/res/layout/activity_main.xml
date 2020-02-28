@@ -18,9 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="fakeBook"
+            android:textColor="@color/text"
             android:background="@color/tv_background"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textStyle="bold"
             />
 
