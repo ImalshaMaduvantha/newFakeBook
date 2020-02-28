@@ -2,13 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/text"
+    android:background="@android:color/holo_blue_light"
     >
 
-    <ListView
-        android:id="@+id/all_data"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:text="Student Information"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
 
+    <ListView
+        android:id="@+id/txtAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"/>
 
 </LinearLayout>

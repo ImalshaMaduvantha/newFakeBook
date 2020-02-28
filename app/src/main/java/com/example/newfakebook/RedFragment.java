@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.facebook.database.MyDtabase;
+import com.example.newfakebook.database.MyDtabase;
 
 import java.util.ArrayList;
 
