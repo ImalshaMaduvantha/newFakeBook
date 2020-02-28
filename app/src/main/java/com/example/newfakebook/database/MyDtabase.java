@@ -65,11 +65,10 @@ public class MyDtabase extends SQLiteOpenHelper {
     public Cursor getStudent(String name){
         SEARCH_NAME = name;
         SQLiteDatabase db = getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM "+STUDENT_TABLE , null);
-
-        db.close();
+        Cursor cursor = db.rawQuery("SELECT * FROM student WHERE name='"+name+"'", null);
 
         return cursor;
+
     }
 
 
